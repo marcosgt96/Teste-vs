@@ -1,0 +1,34 @@
+Tour guiado pelo CLI
+cd "C:\Users\marcos.moraes\Documents\Testes Python"
+.venv\Scripts\activate       # só se já tiver criado, caso contrário crie com python -m venv .venv
+
+1. iniciar o programa
+python main.py
+
+
+
+
+Observação sobre o demo
+
+Durante os testes encontrei um bloqueio intermitente do SQLite ("database is locked"). Isso normalmente ocorre quando outro processo/instância mantém o arquivo data.db aberto (ex.: DB Browser, outra instância do CLI ou editor/antivírus).
+Se ocorrer o bloqueio você pode:
+Fechar programas que possam estar usando data.db (DB Browser, outro Python, etc.), ou
+
+Remover o arquivo e reiniciar o DB:
+Remove-Item .\data.db
+python main.py
+
+Depois rode:
+python demo_run.py
+
+Ou rode o CLI interativo para testar manualmente:
+python main.py
+
+GUI Tkinter — abra com python gui.py ou python [main.py](http://_vscodecontentref_/5) gui:
+
+Aba Produtos: adicionar, listar, atualizar estoque
+Aba Vendedores: cadastro
+Aba Vendas: registrar vendas (multi-item)
+Aba Relatórios: visualizar completo + exportar CSVs
+Testes — suite basic com pytest (2 testes passando).
+
