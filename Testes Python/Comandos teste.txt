@@ -1,3 +1,13 @@
+Tour guiado pelo CLI
+cd "C:\Users\marcos.moraes\Documents\Testes Python"
+.venv\Scripts\activate       # só se já tiver criado, caso contrário crie com python -m venv .venv
+
+1. iniciar o programa
+python main.py
+
+
+
+
 Observação sobre o demo
 
 Durante os testes encontrei um bloqueio intermitente do SQLite ("database is locked"). Isso normalmente ocorre quando outro processo/instância mantém o arquivo data.db aberto (ex.: DB Browser, outra instância do CLI ou editor/antivírus).
